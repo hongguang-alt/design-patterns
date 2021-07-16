@@ -2,12 +2,12 @@
 
 #### 先序
 
-- 柯里化
+- [柯里化](https://github.com/hongguang-alt/design-patterns/blob/master/perface/curry.js)
   - 参数复用
   - 提前计算
   - 延迟计算/运行
-- 反柯里化
-- 偏函数
+- [反柯里化](https://github.com/hongguang-alt/design-patterns/blob/master/perface/anti-curry.js)
+- [偏函数](https://github.com/hongguang-alt/design-patterns/blob/master/perface/partial.js)
 
 柯里化和反柯里化的区别：
 

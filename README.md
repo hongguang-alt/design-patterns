@@ -59,9 +59,15 @@ JS 是一种基于原型链实现的模式。
 - [工厂模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/factory/factory.js)
 
   > 工厂模式 （Factory Pattern），根据不同的输入返回不同类的实例，一般用来创建同一类对象。工厂方式的主要思想是将对象的创建与对象的实现分离。
+
   > 抽象工厂模式 (Abstract Factory)，通过对类的工厂抽象使其业务对于产品类簇的创建，而不是负责创建某一类产品的实例。关键在于使用抽象类制定了实例的结构，调用者直接面向实例的结构编程，从实例的具体实现中解耦。
 
   <img src="README.assets/image-20210914170704257-1610426.png" width="600px" />
+
+- [建造者模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/builder/builder.js)
+
+  > 建造者模式（Builder Pattern）又称为生成器模式，分布构建一个复杂对象，并允许按步骤构造。同样的构建过程可以采用不同的表示，将一个复杂对象的构建层与其表示层分离。
+
 
 ##### 注：
 

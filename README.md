@@ -53,15 +53,13 @@ JS 是一种基于原型链实现的模式。
 #### 创建型模式
 
 - [单例模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/singleton/singleton.js)
-
+  
   > 单例模式 （Singleton Pattern）又称为单体模式，保证一个类只有一个实例，并提供一个访问它的全局访问点。也就是说，第二次使用同一个类创建新对象的时候，应该得到与第一次创建的对象完全相同的对象。
-
 - [工厂模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/factory/factory.js)
-
-  > 工厂模式 （Factory Pattern），根据不同的输入返回不同类的实例，一般用来创建同一类对象。工厂方式的主要思想是将对象的创建与对象的实现分离。
-  > 抽象工厂模式 (Abstract Factory)，通过对类的工厂抽象使其业务对于产品类簇的创建，而不是负责创建某一类产品的实例。关键在于使用抽象类制定了实例的结构，调用者直接面向实例的结构编程，从实例的具体实现中解耦。
-
-  <img src="/Users/weidian/Library/Application Support/typora-user-images/image-20210914163707675.png" alt="image-20210914163707675" style="zoom:30%;" />
+  >工厂模式 （Factory Pattern），根据不同的输入返回不同类的实例，一般用来创建同一类对象。工厂方式的主要思想是将对象的创建与对象的实现分离。
+  >抽象工厂模式 (Abstract Factory)，通过对类的工厂抽象使其业务对于产品类簇的创建，而不是负责创建某一类产品的实例。关键在于使用抽象类制定了实例的结构，调用者直接面向实例的结构编程，从实例的具体实现中解耦。
+  
+  ![image-20210914165643275](/Users/weidian/学习/学习设计模式/README.assets/image-20210914165643275-1609808.png)
 
 ##### 注：
 

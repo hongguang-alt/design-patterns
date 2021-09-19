@@ -54,19 +54,19 @@ JS 是一种基于原型链实现的模式。
 
 - [单例模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/singleton/singleton.js)
 
-  > 单例模式 （Singleton Pattern）又称为单体模式，保证一个类只有一个实例，并提供一个访问它的全局访问点。也就是说，第二次使用同一个类创建新对象的时候，应该得到与第一次创建的对象完全相同的对象。
+  > 单例模式 （Singleton Pattern）又称为单体模式，保证一个类只有一个实例，并提供一个访问它的全局访问点。也就是说，第二次使用同一个类创建新对象的时候，应该得到与第一次创建的对象完全相同的对象。（游戏存档）
 
 - [工厂模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/factory/factory.js)
 
   > 工厂模式 （Factory Pattern），根据不同的输入返回不同类的实例，一般用来创建同一类对象。工厂方式的主要思想是将对象的创建与对象的实现分离。
 
-  > 抽象工厂模式 (Abstract Factory)，通过对类的工厂抽象使其业务对于产品类簇的创建，而不是负责创建某一类产品的实例。关键在于使用抽象类制定了实例的结构，调用者直接面向实例的结构编程，从实例的具体实现中解耦。
+  > 抽象工厂模式 (Abstract Factory)，通过对类的工厂抽象使其业务对于产品类簇的创建，而不是负责创建某一类产品的实例。关键在于使用抽象类制定了实例的结构，调用者直接面向实例的结构编程，从实例的具体实现中解耦。（饭馆吃法）
 
   <img src="README.assets/image-20210914170704257-1610426.png" width="600px" />
 
 - [建造者模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/builder/builder.js)
 
-  > 建造者模式（Builder Pattern）又称为生成器模式，分布构建一个复杂对象，并允许按步骤构造。同样的构建过程可以采用不同的表示，将一个复杂对象的构建层与其表示层分离。
+  > 建造者模式（Builder Pattern）又称为生成器模式，分布构建一个复杂对象，并允许按步骤构造。同样的构建过程可以采用不同的表示，将一个复杂对象的构建层与其表示层分离。（组装小汽车）
 
   <img src="README.assets/image-20210914190404365.png" width="600px" />
 
@@ -75,6 +75,20 @@ JS 是一种基于原型链实现的模式。
   - 相同的方法，不同的执行顺序，产生不一样的产品时，可以采用建造者模式。
   - 产品的组成部件类似，通过组装不同的组件获得不同产品时，可以采用建造者模式。
 
+#### 结构型模式
+
+- [代理模式](https://github.com/hongguang-alt/design-patterns/blob/master/structure/proxy/proxy.js)
+
+  > 代理模式 （Proxy Pattern）又称为委托模式，它为目标对象创造了一个代理对象，以控制对目标对象的访问。（找明星拍广告）
+
+  <img src="README.assets/image-20210919171808170-2043093.png" width="600px" />
+
+  适用场景：
+
+  - 拦截器，axios的拦截器，vue-router的拦截器。
+  - 前端数据的响应式原理。
+  - 保护代理和虚拟代理。
+  - 正向代理和反向代理。
 ##### 注：
 
 三大特性

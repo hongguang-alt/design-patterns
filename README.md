@@ -85,10 +85,24 @@ JS 是一种基于原型链实现的模式。
 
   适用场景：
 
-  - 拦截器，axios的拦截器，vue-router的拦截器。
+  - 拦截器，axios 的拦截器，vue-router 的拦截器。
   - 前端数据的响应式原理。
   - 保护代理和虚拟代理。
   - 正向代理和反向代理。
+
+- [享元模式](https://github.com/hongguang-alt/design-patterns/blob/master/structure/flyweight/flyweight.js)
+
+  > 享元模式 （Flyweight Pattern）运用共享技术来有效地支持大量细粒度对象的复用，以减少创建的对象的数量。（驾考现场的考试车）
+
+  <img src="README.assets/image-20210926213100066-2663062.png" width="600px" />
+
+  使用场景：
+
+  - 如果一个程序中大量使用了相同或相似对象，那么可以考虑引入享元模式；
+  - 如果使用了大量相同或相似对象，并造成了比较大的内存开销；
+  - 对象的大多数状态可以被转变为外部状态；
+  - 剥离出对象的外部状态后，可以使用相对较少的共享对象取代大量对象；
+
 ##### 注：
 
 三大特性

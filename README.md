@@ -1,6 +1,6 @@
-### 设计模式
+## 设计模式
 
-#### 先序
+### 先序
 
 - [柯里化](https://github.com/hongguang-alt/design-patterns/blob/master/perface/curry.js)
   - 参数复用
@@ -29,7 +29,7 @@
 
 <hr style="height:1px" />
 
-#### 设计原则
+### 设计原则
 
 JS 是一种基于原型链实现的模式。
 这里着重将三大特性中的**继承**，以及六大原则中的**单一职责原则**，**开放封闭原则**，**最少知识原则**。
@@ -50,7 +50,7 @@ JS 是一种基于原型链实现的模式。
   - 缺点：类（方法、对象）之间不直接通信也会经过一个第三者来通信，那么就要权衡引入第三者带来的复杂度是否值得。
   <hr style="height:1px" />
 
-#### 创建型模式
+### 创建型模式
 
 - [单例模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/singleton/singleton.js)
 
@@ -75,7 +75,7 @@ JS 是一种基于原型链实现的模式。
   - 相同的方法，不同的执行顺序，产生不一样的产品时，可以采用建造者模式。
   - 产品的组成部件类似，通过组装不同的组件获得不同产品时，可以采用建造者模式。
 
-#### 结构型模式
+### 结构型模式
 
 - [代理模式](https://github.com/hongguang-alt/design-patterns/blob/master/structure/proxy/proxy.js)
 
@@ -102,6 +102,29 @@ JS 是一种基于原型链实现的模式。
   - 如果使用了大量相同或相似对象，并造成了比较大的内存开销；
   - 对象的大多数状态可以被转变为外部状态；
   - 剥离出对象的外部状态后，可以使用相对较少的共享对象取代大量对象；
+
+- [适配器模式](https://github.com/hongguang-alt/design-patterns/blob/master/structure/adapter/adapter.js)
+
+  > 适配器模式（Adapter Pattern）又称包装器模式，将一个类（对象）的接口（方法、属性）转化为用户需要的另一个接口，解决类（对象）之间接口不兼容的问题。（电源适配器）
+
+  <img src="README.assets/image-adapter.png" width="600px" />
+
+  使用场景：
+
+  - 如果你想要使用一个已经存在的对象，但是它的接口不满足需求，那么可以使用适配器模式，把已有的实现转换成你需要的接口
+  - 如果你想创建一个可以复用的对象，而且确定需要和一些不兼容的对象一起工作，这种情况可以使用适配器模式，然后需要什么就适配什么
+
+- [装饰者模式](https://github.com/hongguang-alt/design-patterns/blob/master/structure/adapter/adapter.js)
+
+  > 装饰者模式 （Decorator Pattern）又称装饰器模式，在不改变原对象的基础上，通过对其添加属性或方法来进行包装拓展，使得原有对象可以动态具有更多功能。(给新房子装修)
+
+  <img src="README.assets/decorator.png" width="600px" />
+
+  使用场景：
+
+  - 如果不希望系统中增加很多子类，那么可以考虑使用装饰者模式
+  - 需要通过对现有的一组基本功能进行排列组合而产生非常多的功能时，采用继承关系很难实现，这时采用装饰者模式可以很好实现
+  - 当对象的功能要求可以动态地添加，也可以动态地撤销，可以考虑使用装饰者模式
 
 ##### 注：
 

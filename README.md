@@ -52,11 +52,11 @@ JS 是一种基于原型链实现的模式。
 
 ### 创建型模式
 
-- [单例模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/singleton/singleton.js)
+- [单例模式](https://github.com/hongguang-alt/design-patterns/blob/master/create/singleton/singleton.js)
 
   > 单例模式 （Singleton Pattern）又称为单体模式，保证一个类只有一个实例，并提供一个访问它的全局访问点。也就是说，第二次使用同一个类创建新对象的时候，应该得到与第一次创建的对象完全相同的对象。（游戏存档）
 
-- [工厂模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/factory/factory.js)
+- [工厂模式](https://github.com/hongguang-alt/design-patterns/blob/master/create/factory/factory.js)
 
   > 工厂模式 （Factory Pattern），根据不同的输入返回不同类的实例，一般用来创建同一类对象。工厂方式的主要思想是将对象的创建与对象的实现分离。
 
@@ -64,7 +64,7 @@ JS 是一种基于原型链实现的模式。
 
   <img src="README.assets/image-20210914170704257-1610426.png" width="600px" />
 
-- [建造者模式](https://github.com/hongguang-alt/design-patterns/blob/master/creat/builder/builder.js)
+- [建造者模式](https://github.com/hongguang-alt/design-patterns/blob/master/create/builder/builder.js)
 
   > 建造者模式（Builder Pattern）又称为生成器模式，分布构建一个复杂对象，并允许按步骤构造。同样的构建过程可以采用不同的表示，将一个复杂对象的构建层与其表示层分离。（组装小汽车）
 
@@ -125,6 +125,17 @@ JS 是一种基于原型链实现的模式。
   - 如果不希望系统中增加很多子类，那么可以考虑使用装饰者模式
   - 需要通过对现有的一组基本功能进行排列组合而产生非常多的功能时，采用继承关系很难实现，这时采用装饰者模式可以很好实现
   - 当对象的功能要求可以动态地添加，也可以动态地撤销，可以考虑使用装饰者模式
+
+- [外观模式](https://github.com/hongguang-alt/design-patterns/blob/master/structure/facade/facade.js)
+
+  > 外观模式 （Facade Pattern）又叫门面模式，定义一个将子系统的一组接口集成在一起的高层接口，以提供一个一致的外观。外观模式让外界减少与子系统内多个模块的直接交互，从而减少耦合，让外界可以更轻松地使用子系统。本质是封装交互，简化调用。
+
+  使用场景：
+
+  - 维护设计粗糙和难以理解的遗留系统，或者系统非常复杂的时候，可以为这些系统设置外观模块，给外界提供清晰的接口，以后新系统只需与外观交互即可；
+  - 你写了若干小模块，可以完成某个大功能，但日后常用的是大功能，可以使用外观来提供大功能，因为外界也不需要了解小模块的功能；
+  - 团队协作时，可以给各自负责的模块建立合适的外观，以简化使用，节约沟通时间；
+  - 如果构建多层系统，可以使用外观模式来将系统分层，让外观模块成为每层的入口，简化层间调用，松散层间耦合；
 
 ##### 注：
 

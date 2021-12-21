@@ -158,6 +158,17 @@ JS 是一种基于原型链实现的模式。
 - 2.不希望使用继承，或因为多层次继承导致系统类的个数急剧增加的系统。
 - 3.产品部件的粒度越细，组件复用的必要性越大，可以考虑桥接模式。
 
+- [发布订阅模式](https://github.com/hongguang-alt/design-patterns/blob/master/behavior/observer/observer.js)
+
+> 发布订阅（Publish-Subscribe Pattern, pub-sub），又叫做观察者模式（Observer Pattern），它提供了一种一对多的的关系，让多个订阅者对象同时监听某一个发布者，或者叫主题对象，这个主题对象的状态发生变化时就会通知所有订阅自己的订阅者对象，使得它们能够自动更新自己。
+
+<img src="README.assets/observer.png" width="600px" />
+
+观察者模式和发布订阅模式的区别：
+
+- 1.观察者模式中的观察者和被观察者之间还存在耦合，被观察者是知道观察者的。
+- 2.发布和订阅模式中的发布者和订阅者不需要知道对方的存在，他们通过消息代理来通信，解耦更加彻底。
+
 
 
 ##### 注：

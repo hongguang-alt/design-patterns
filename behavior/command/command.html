@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命令模式</title>
+    <style>
+        .demo {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            border: 1px solid #eee;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .bottom {
+            width: 400px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .other {
+            width: 400px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .btn {
+            width: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo" id="demo"></div>
+    <div class="bottom">
+        <button class="btn" id='up'>上</button>
+        <button class="btn" id="right">右</button>
+        <button class="btn" id="down">下</button>
+        <button class="btn" id='left'>左</button>
+    </div>
+    <div class="other">
+        <button class="btn" id='undo'>撤销</button>
+        <button class="btn" id="redo">重做</button>
+    </div>
+</body>
+<script src='./command.js'></script>
+
+</html>
